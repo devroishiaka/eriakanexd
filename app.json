@@ -1,0 +1,22 @@
+{
+    "name": "broadcast-bot",
+    "description": "Message broadcast bot",
+    "keywords": ["telegram", "message", "broadcast", "bot", "open", "source"],
+    "logo": "https://cdn.pixabay.com/photo/2017/10/25/18/13/beacon-icon-2888803_960_720.png",
+    "website": "https://github.com/m4mallu/broadcast-bot",
+    "repository": "https://github.com/m4mallu/broadcast-bot",
+    "env": {
+          "TOKEN": {"description": "Get Bot Token From @BotFather Bot", "required": true}
+    },
+    "buildpacks": [
+      {
+        "url": "heroku/python"
+      }
+    ],
+    "formation": {
+      "web": {
+        "quantity": 1,
+        "size": "free"
+      }
+    }
+  }
