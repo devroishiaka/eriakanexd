@@ -29,11 +29,13 @@ def main():
     dp.add_handler(CommandHandler("start", start))
 
     dp.add_error_handler(error)
+    
+    updater.start_polling()
 
-    updater.start_webhook(listen="0.0.0.0",
+    """updater.start_webhook(listen="0.0.0.0",
                             port=int(PORT),
                             url_path=TOKEN)
-    updater.bot.setWebhook('https://testingerixd.herokuapp.com/' + TOKEN)
+    updater.bot.setWebhook('https://testingerixd.herokuapp.com/' + TOKEN)"""
 
     updater.idle()
 
