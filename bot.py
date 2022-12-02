@@ -2,7 +2,7 @@ import os
 import logging
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
-TOKEN = "5302296045:AAHC5ebjWRnZXvgV1uuWT3Ap7nUZE97rXSQ"
+TOKEN = os.environ.get("TOKEN", "5302296045:AAHC5ebjWRnZXvgV1uuWT3Ap7nUZE97rXSQ")
 PORT = int(os.environ.get('PORT', 5000))
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
